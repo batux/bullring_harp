@@ -38,7 +38,6 @@ public class ElectionMessageSenderRunnable implements Runnable {
 			visitedServerNames.add(ownerServer.getServerName());
 			
 			String logInformation = "["+ ownerServer.getServerName() +"] " + "Visited File Names: " + visitedServerNames;
-//				System.out.println(logInformation);
 			ApplicationLogManager.getApplicationLogger().write(logInformation);
 			
 			if(coordinatorFileServerNameOfElection.equals(neighborFileServer.getServerName()) && (visitedServerNames.size() > 0)) {
