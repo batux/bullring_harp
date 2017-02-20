@@ -41,7 +41,6 @@ public class FileProcessor {
 			
 			this.setOpened(true);
 			
-//			System.out.println("File Writer is opened!");
 			ApplicationLogManager.getApplicationLogger().write("File Writer is opened!");
 			
 		} catch (IOException e) {
