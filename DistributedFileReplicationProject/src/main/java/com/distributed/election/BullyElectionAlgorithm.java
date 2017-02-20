@@ -69,7 +69,6 @@ public class BullyElectionAlgorithm {
 		
 		for(FileServer candidateFileServer : candidateFileServers) {
 			String logInformation = "[" + candidateFileServer.getServerName() + "'s PV: " + candidateFileServer.getPriorityValue();
-//			System.out.println(logInformation);
 			ApplicationLogManager.getApplicationLogger().write(logInformation);
 		}
 		
@@ -79,7 +78,6 @@ public class BullyElectionAlgorithm {
 			candidateFileServer.getCommunicationSystem().getClient().sendInitElectionMessage(firstCandidateFileServer.getServerName(), firstCandidateFileServer.getPriorityValue());
 		}
 		
-//		firstCandidateFileServer.setElectionStateStarted(true);
 	}
 
 	public ServerGroup getServerGroup() {
